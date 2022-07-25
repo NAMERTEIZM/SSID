@@ -78,7 +78,7 @@ body {
 }
 
 .daireclass {
-    margin-left: 1150px;
+    margin: auto;
     background-color: #ffffff;
     border: 18px solid rgba(102, 102, 102, 0.5);
     border-radius: 215px;
