@@ -1,6 +1,13 @@
 body {
     background-image: url("layer-3.jpg");
     background-size: cover;
+    
+    /* arkaplanı ortala ve tekrar etmesini engelle */
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    /* head içerisine font ekledikten sonra buradan da font family ekleyelim */
+    font-family: 'Roboto', sans-serif;
 }
 
 * {
@@ -9,96 +16,28 @@ body {
     margin: 0;
 }
 
-#login-container {
-    max-height: 100vh;
-    display: flex;
-
-    align-content: center;
-
-    /*background-color: #2196F3; */
-
-    margin: 100px;
-    /* border: 5px solid green ; */
-    align-self: center;
-    align-items: flex;
-}
-
-.col-1 {
-    width: 8.33%;
-}
-
-.col-2 {
-    width: 16.66%;
-}
-
-.col-3 {
-    width: 25%;
-}
-
-.col-4 {
-    width: 33.33%;
-}
-
-.col-5 {
-    width: 41.66%;
-}
-
-.col-6 {
-    width: 50%;
-}
-
-.col-7 {
-    width: 58.33%;
-}
-
-.col-8 {
-    width: 66.66%;
-}
-
-.col-9 {
-    width: 75%;
-}
-
-.col-10 {
-    width: 83.33%;
-}
-
-.col-11 {
-    width: 91.66%;
-}
-
-.col-12 {
-    width: 100%;
-}
-
-[class*="col"] {
-    float: left;
-    padding: 50px;
-    /*  border: 1px solid red */
-}
-
 .daireclass {
     margin: auto;
     background-color: #ffffff;
     border: 18px solid rgba(102, 102, 102, 0.5);
-    border-radius: 215px;
-    max-width: 400px;
-    max-height: 400px;
-    line-height: 200px;
-    font-size: 20px;
+    border-radius: 50%; /* eğer kareyse kutu 50% radius vererek daire şekli verebilirsin */
+    width: 400px;
+    height: 400px;/* yuvarlak olabilmesi için sabit yükseklik ve genişlik verdik */
+    /* şimdi logoyu ortalayalım dikeyde ve yatayda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #resim {
     max-width: 306px;
-    height: 200px;
-    margin-left: 33px;
-    margin-top: 50px;
+    /*  yükseklik zaten otomatik olarak ayarlanır */
+    /* resme margin vermene gerek yok zaten kapsayıcı divi içinde ortaladık bkz: .dairelcass */
 }
 
 #row2 {
     color: rgb(255, 255, 255);
     text-align: center;
-    font-family: Roboto;
     font-size: 75px;
     font-weight: bold;
     font-stretch: normal;
@@ -108,98 +47,51 @@ body {
 }
 
 #adres {
-    font-family: Roboto;
-    font-size: 37px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.04;
+    line-height: 1.4;
     letter-spacing: normal;
     text-align: center;
     color: #fff;
-    display: block;
 }
 
 #phone {
+    margin-right: 10px;
     max-width: 37px;
-    height: 37px;
-    margin-left: 5px;
-    padding-top: 3px;
-    object-fit: contain;
 }
 
-#row4 {
-    color: #fff;
-    font-family: Roboto;
-    font-size: 37px;
-    font-weight: 500;
+#mail {
+    margin-right: 10px;
+    max-width: 38px;
+}
+
+.header{
+    font-size: 50px;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.04;
+    line-height: 0.52;
     letter-spacing: normal;
     text-align: left;
+    color: #fff;
     text-align: center;
-    word-spacing: 25px;
 }
 
-#bee {
-    max-width: 200px;
-    height: 200px;
-    margin-left: 95px;
-    margin-top: 25px;
-    margin-bottom: 6px;
-}
 
-#notice {
-    max-width: 200px;
-    height: 200px;
-    margin-left: 90px;
-    margin-top: 25px;
-    margin-bottom: 6px;
-}
+@media only screen and (max-width: 600px) {
+    .header{
+        line-height: 1.3;
+    }
 
-#mach {
-    max-width: 200px;
-    height: 200px;
-    margin-left: 100px;
-    margin-top: 25px;
-    margin-bottom: 6px;
-}
+    .daireclass{
+        width: 360px;
+        height: 360px;
+    }
 
-#dex {
-    max-width: 200px;
-    height: 200px;
-    margin-left: 85px;
-    margin-top: 25px;
-    margin-bottom: 6px;
-}
-
-#fot1 {
-    background-color: #fff;
-    padding: 10px;
-    margin-left: 550px;
-    margin-top: 25px;
-    margin-right: 25px;
-    max-width: 400px;
-}
-
-#fot2 {
-    background-color: #fff;
-    padding: 10px;
-    margin: 25px;
-    max-width: 400px;
-}
-
-#fot3 {
-    background-color: #fff;
-    padding: 10px;
-    margin: 25px;
-    max-width: 400px;
-}
-
-#fot4 {
-    background-color: #fff;
-    padding: 10px;
-    margin: 25px;
-    max-width: 400px;
-}
+    .daireclass #resim{
+        max-width: 240px;
+    }
+  }
