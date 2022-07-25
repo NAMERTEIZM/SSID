@@ -15,7 +15,7 @@
     
 <div id="row1" class="col-12"  >
 <div class="daireclass" id="logo">
-<img id="resim" src="img/layer-3@3x.png">
+<img id="resim" src="layer-3@3x.png">
 </div>
     </div>
 
@@ -30,7 +30,7 @@
    </div>
 
    <div id="row4" class="col-12 justify-content-between align-items-center "  >
-   02166390603      <img id="phone" src="img/phone@3x.png">             |             <img id="phone" src="img/mail-2@3x.png">      info@ssidglobal.com     
+   02166390603      <img id="phone" src="phone@3x.png">             |             <img id="phone" src="mail-2@3x.png">      info@ssidglobal.com     
    </div>
 
    
@@ -38,24 +38,24 @@
    
    <div id="fot1" class="col-3"> 
    
-   <img id="bee" src="img/bee.png">  
+   <img id="bee" src="bee.png">  
    </div>
  
    
    <div id="fot2" class="col-3" >
    
-   <img id="notice" src="img/notice.png">  
+   <img id="notice" src="notice.png">  
    
 </div>
    
    <div id="fot3" class="col-3" >
    
-   <img id="mach" src="img/mach.png">  
+   <img id="mach" src="mach.png">  
    
 </div>
    
    <div id="fot4" class="col-3" >
-   <img id="dex" src="img/DEX.png">     
+   <img id="dex" src="DEX.png">     
 
 
 </div>
